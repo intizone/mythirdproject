@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
@@ -5,9 +7,9 @@
     <meta charset="utf-8">
     <title>Documentation For Westo || Responsive HTML 5 Template</title>
     <!-- Stylesheets -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/scrollbar.css" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/scrollbar.css' %}" rel="stylesheet">
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -29,7 +31,7 @@
             <div class="menu-box">
                 <!--Logo-->
                 <br>
-                <div class="logo text-right"><a href="#"><img src="images/logo.png" alt=""></a></div>
+                <div class="logo text-right"><a href="#"><img src="{% static 'images/logo.png' %}" alt=""></a></div>
                 <!--Sticky Menu-->
                 <nav class="sticky-menu">
                     <ul>
@@ -198,7 +200,7 @@
                         google or send us your location in google map, we will do that for you. here is a screenshot
                         that shows where exactly you have to change these values.</h3>
                     <p>You will find the setting code on <strong>contact.html</strong></p>
-                    <figure class="image-box"><img src="images/map-settings.jpg" alt=""></figure>
+                    <figure class="image-box"><img src="{% static 'images/map-settings.jpg' %}" alt=""></figure>
                 </div>
             </section>
 
@@ -213,7 +215,7 @@
                     <h3>We have added an attractive and fully functional contact form. You need to update the recipient
                         name and email address.</h3>
                     <p>You can change recipient name and email address in <strong>assets/inc/sendemail.php</strong></p>
-                    <figure class="image-box"><img src="images/mail-settings.jpg" alt=""></figure>
+                    <figure class="image-box"><img src="{% static 'images/mail-settings.jpg' %}" alt=""></figure>
                 </div>
             </section>
 
@@ -231,7 +233,7 @@
                     <p>Caveat</p>
                     <br>
                     <p><strong> File Used For Animation Effects :</strong></p>
-                    <p><strong>wow.js</strong> (in js Folder)</p>
+                    <p><strong>wow.js</strong> (in js Folder)</p>' 
                     <p><strong>animate.css</strong> (in css Folder)</p>
                     <br>
                     <p><strong>Sliders Used Are:</strong></p>
@@ -276,12 +278,12 @@
     </div>
     <!--End pagewrapper-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/scrollbar.js"></script>
-    <script src="js/script.js"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nav.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollTo.js' %}"></script>
+    <script src="{% static 'js/scrollbar.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 
 </body>
 
